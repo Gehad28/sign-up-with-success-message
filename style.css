@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --tomato: rgb(255, 98, 87);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: var(--charcoal-grey);
+    height: 100vh;
+    align-content: center;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+}
+
+.sign-up .img{
+    flex-basis: 45%;
+    width: 40%;
+}
+
+.content{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+
+.content h1{
+    font-size: 3em;
+    color: var(--dark-slate-grey);
+}
+
+p{
+    color: var(--dark-slate-grey);
+    font-size: 0.85em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.content ul{
+    list-style: none;
+}
+
+.content ul li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+li span{
+    font-size: 0.8em;
+    color: var(--dark-slate-grey);
+}
+
+li img{
+    width: 0.9rem;
+}
+
+.content .input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.input label{
+    font-size: 0.7em;
+    color: var(--dark-slate-grey);
+    font-weight: 700;
+}
+
+.input .input-label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input .input-label span{
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #fe683c;
+    display: none;
+}
+
+.input input{
+    border-radius: 10px;
+    border: 1.5px solid rgba(146, 148, 160, 0.5);
+    padding: 1rem;
+    outline: none;
+}
+
+.input input:hover, .input input:focus{
+    border: 1.5px solid black;
+}
+
+.input .error{
+    background-color: rgb(254, 104, 60, 0.2);
+    border: 1.5px solid rgba(197, 81, 45, 0.5);
+    color: rgb(255, 98, 87, 0.6);
+    font-weight: 700;
+}
+
+button{
+    background-color: var(--dark-slate-grey);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.7em;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(255,87,87);
+    background: linear-gradient(90deg, rgba(255,87,87,1) 34%, rgba(255,114,87,1) 60%, rgba(255,129,87,1) 100%);
+    box-shadow: 0 10px 15px 5px rgba(255,87,87, 0.3);
+}
+
+.success{
+    width: 25%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+}
+
+.success img{
+    width: 3rem;
+}
+
+.success h2{
+    font-size: 2.6em;
+    color: var(--dark-slate-grey);
+    line-height: 1;
+}
+
+.success p{
+    font-size: 0.75em;
+    margin-bottom: 1rem;
+}
+
+.success p span{
+    font-weight: 700;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+
+.attribution a { 
+    color: var(--tomato); 
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
