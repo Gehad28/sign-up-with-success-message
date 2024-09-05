@@ -256,4 +256,8 @@ footer{
     .attribution{
         color: var(--dark-slate-grey);
     }
+
+    footer{
+        position: relative;
+    }
 }
