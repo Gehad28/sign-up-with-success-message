@@ -35,9 +35,13 @@ body{
     width: 50%;
 }
 
-.sign-up .img{
+.sign-up picture{
     flex-basis: 45%;
     width: 40%;
+}
+
+.sign-up .img{
+    width: 100%;
 }
 
 .content{
@@ -184,4 +188,71 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 380px){
+    body{
+        background-color: white;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .sign-up picture{
+        width: 100%;
+    }
+
+    .content{
+        padding: 2rem;
+    }
+
+    .content h1{
+        font-size: 2.5em;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+    .content ul li {
+        align-items: start;
+    }
+
+    li span{
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    li img{
+        width: 1.3rem;
+    }
+
+    .success{
+        display: none;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+        height: 100vh;
+    }
+
+    .success img{
+        margin-top: 3rem;
+    }
+
+    .success p{
+        font-size: 1em;
+    }
+
+    .success button{
+        margin-top: auto;
+    }
+
+    .attribution{
+        color: var(--dark-slate-grey);
+    }
 }
